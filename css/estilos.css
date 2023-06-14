@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@100&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+
+nav {
+    color: white;
+    width: 100vw;
+    height: 16vh;
+    background-color: rgb(232, 83, 83);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.mostrar {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 30vh;
+    justify-content: space-between;
+    position: fixed;
+    background-color: rgb(232, 83, 83);
+    left: 0;
+    top: 16vh;
+    padding: 2vw;
+    width: 100vw;
+    border-radius: 0% 0% 20% 20%;
+}
+
+
+nav div {
+    display: flex;
+    width: 24.11%;
+    justify-content: space-between;
+}
+
+
+header {
+    height: 43vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1 {
+    font-family: 'DM Serif Display', serif;
+    margin: 0;
+    font-size: 40px;
+    line-height: 125%;
+}
+
+
+nav h1, header h1 {
+    margin-top: 0;
+}
+
+
+nav h1 {
+    font-weight: 500;
+}
+
+
+header h1 {
+    font-family: 'DM Serif Display', serif;
+}
+
+
+header h3 {
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    letter-spacing: 5px;
+    line-height: 125%;
+}
+
+
+header p {
+    font-size: 20;
+}
+
+
+header a, nav a {
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 150%;
+}
+
+
+header a {
+    background-color: rgb(232, 83, 83);
+}
+
+header a:hover {
+    font-size: 11px;
+    opacity: 0.2;
+  }  
+
+nav, 
+header, main {
+    width: 100vw;
+    padding: 0 8.33vw;
+}
+
+
+section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 105vh;
+    margin-bottom: 30px;
+}
+
+
+section div {
+    width: 45.83%;
+}
+
+
+section div img, video {
+    width: 100%
+}
+
+
+nav span {
+    display: none;
+}
+
+
+.icon-menu:before {
+    color: white;
+    font-size: 3vw;
+}
+
+
+span.icon-menu:hover {
+    cursor: pointer;
+}
+
+
+section div img {
+    transition: transform 0.3s;
+}
+
+
+section div img:hover {
+    opacity: 0.6;
+    transform: scale(0.85);
+}
+
+
+nav h1:hover {
+    animation: agranda 0.3s alternate infinite;
+}
+
+
+@keyframes agranda {
+    from {font-size: 40px;}
+
+    to {font-size: 60px;}
+}
+
+
+footer {
+    color: white;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(232, 83, 83);
+}
+
+
+nav a:hover {
+    opacity: 0.4;
+  }  
+
+  nav span {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    nav div {
+        display: none;
+    }
+
+
+@media (max-width: 1024px) {
+    nav div {
+        width: 60%;
+    }
+
+    main section {
+        height: auto;
+    }
+}
+
+
+@media (max-width: 992px) {
+    section {
+        height: auto;
+    }
+
+    section div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+    nav span {
+        display: inline;
+    }
+
+}
